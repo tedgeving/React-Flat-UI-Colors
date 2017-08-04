@@ -1,0 +1,142 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    zoom: 1;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+#app {
+    clear: both
+}
+.wrapper-block {
+    width: 100%;
+    height: calc(100% - 80px);
+    left: 0;
+    position: fixed;
+}
+header {
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+header h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.overlay .message {
+    font-size: 120px;
+    height: 120px;
+    line-height: 120px;
+    color: #ecf0f1;
+    top: 50%;
+    margin-top: -120px;
+    text-shadow: 2px 2px #2c3e50;
+    background: rgba(255, 255, 255, .2);
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .3s
+}
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active in <2.1.8 */
+{
+    opacity: 0
+}
+.gh,
+.ghlink {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    height: 20px;
+    width: 20px;
+    z-index: 5;
+}
+svg .fill {
+    fill: #fff;
+}
+
+.block {
+    position: relative;
+    width: 20%;
+    height: 25%;
+    background: #efefef;
+    color: #fff;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+    padding: 20px;
+    cursor: pointer;
+}
+.block .name {
+    text-transform: uppercase;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.block .hover {
+    text-transform: uppercase;
+    position: absolute;
+    padding: 2% 10%;
+    border: 2px solid rgba(255, 255, 255, .3);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.hover {
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    opacity: 0;
+    display: block;
+}
+.block:hover .hover {
+    opacity: 1;
+}
+.block .hex {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.toggle select {
+    margin: 0 auto;
+    display: block;
+}
+.center {
+    text-align: center;
+}

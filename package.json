@@ -1,0 +1,33 @@
+{
+  "name": "react-flat-ui-colors",
+  "version": "1.0.0",
+  "description": "A clone of Flat UI colors (https://flatuicolors.com/) built with React",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open"
+  },
+  "author": "Ted Geving",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.27.3",
+    "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.16.0",
+    "webpack": "^2.3.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^16.0.0-alpha.5",
+    "react-dom": "^16.0.0-alpha.5"
+  }
+}
